@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <title>Frontend Mentor | Tip calculator app</title>
+        <link rel="stylesheet" href="dist/styles.css" />
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <h1 class="sr-only">Splitter</h1>
+            <img
+                src="images/logo.svg"
+                alt="Splitter"
+                aria-label="Splitter Tip Calculator"
+            />
+        </header>
+
+        <main>
+            <!-- App Section -->
+            <section class="app">
+                <div class="app__container">
+                    <!-- Input Section -->
+                    <div class="app__input">
+                        <div class="app__input__bill">
+                            <label for="bill">Bill</label>
+                            <img
+                                class=""
+                                src="images/icon-dollar.svg"
+                                alt=""
+                                aria-hidden="true"
+                            />
+                            <input
+                                type="number"
+                                name="bill"
+                                id="bill"
+                                placeholder="0"
+                            />
+                        </div>
+                        <!-- /.app__input__bill -->
+                        <div class="app__input__tip">
+                            <h2>Select Tip %</h2>
+                            <div class="tip__button__group">
+                                <button class="tip__button" value="5">5%</button
+                                ><!-- /.tip__button --><button
+                                    class="btn tip__button"
+                                    value="10"
+                                >
+                                    10%</button
+                                ><!-- /.tip__button --><button
+                                    class="btn tip__button"
+                                    value="15"
+                                >
+                                    15%</button
+                                ><!-- /.tip__button --><button
+                                    class="btn tip__button"
+                                    value="25"
+                                >
+                                    25%</button
+                                ><!-- /.tip__button --><button
+                                    class="btn tip__button"
+                                    value="50"
+                                >
+                                    50%</button
+                                ><!-- /.tip__button -->
+                                <label class="sr-only" for="custom-tip"
+                                    >Custom Tip Amount</label
+                                >
+                                <input
+                                    class="custom-tip"
+                                    type="text"
+                                    name="custom-tip"
+                                    id="custom-tip"
+                                    placeholder="Custom"
+                                />
+                            </div>
+                            <!-- /.tip__button__group -->
+                        </div>
+                        <!-- /.app__input__tip -->
+                        <div class="app__input__people">
+                            <label for="people"
+                                ><span>Number of People</span
+                                ><span class="error-message"
+                                    >Can't be zero</span
+                                >
+                            </label>
+                            <img
+                                class=""
+                                src="images/icon-person.svg"
+                                alt=""
+                                aria-hidden="true"
+                            />
+                            <input
+                                class="people"
+                                type="text"
+                                name="people"
+                                id="people"
+                                placeholder="0"
+                            />
+                        </div>
+                        <!-- /.app__input__people -->
+                    </div>
+                    <!-- /.app__input -->
+                    <!-- Output Section -->
+                    <div class="app__output">
+                        <div class="app__output__tip">
+                            <div class="tip__person__text">
+                                <h2 class="color--white">Tip Amount</h2>
+                                <p class="color--primary--medium">/ person</p>
+                            </div>
+                            <!-- /.tip__person__text -->
+                            <div class="tip__person__output color-secondary">
+                                $0.00
+                            </div>
+                            <!-- /.tip__person__output -->
+                        </div>
+                        <!-- /.app__output__tip -->
+                        <div class="app__output__total">
+                            <div class="tip__total__text">
+                                <h2 class="color--white">Total</h2>
+                                <p class="color--primary--medium">/ person</p>
+                            </div>
+                            <!-- /.tip__total__text -->
+                            <div class="tip__total__output color-secondary">
+                                $0.00
+                            </div>
+                            <!-- /.tip__total__output -->
+                        </div>
+                        <!-- /.app__output__total -->
+                        <div class="app__output__reset-button">
+                            <button class="btn btn-reset">Reset</button>
+                        </div>
+                        <!-- /.app__output__reset-button -->
+                    </div>
+                    <!-- /.app__output -->
+                </div>
+                <!-- /.app__container -->
+            </section>
+            <!-- /.app -->
+        </main>
+
+        <footer class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://github.com/brodiewebdt">David Turner</a>.
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
